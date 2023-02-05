@@ -453,6 +453,12 @@ mod test {
     use super::*;
 
     #[test]
+    fn test_empty() {
+        let mut parser = Parser::new("");
+        assert_eq!(parser.parse(), Err(Error::UnexpectedEnd(0)));
+    }
+
+    #[test]
     fn test_null() {
         let mut parser = Parser::new("null");
         assert_eq!(parser.parse(), Ok(Value::Null));
@@ -614,12 +620,5 @@ mod test {
 
         let value = Value::from_str(r#"[{"hello": "world"}, {"foo": "bar"}]"#).unwrap();
         assert_eq!(value.to_string(), r#"[{"hello":"world"},{"foo":"bar"}]"#);
-    }
-
-    #[test]
-    fn playground() {
-        let value = Value::from_str(r#""#).unwrap();
-        dbg!(&value);
-        println!("{}", value.to_string());
     }
 }
