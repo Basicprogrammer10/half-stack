@@ -1,0 +1,3 @@
+- [x] Json serialization / deserialization
+    - [ ] Macro for making a value 
+- [ ] Database
