@@ -1,5 +1,5 @@
 [package]
 authors = ["Connor Slade <connor@connorcode.com>"]
 edition = "2021"
-name = "json"
+name = "trace"
 version = "0.1.0"

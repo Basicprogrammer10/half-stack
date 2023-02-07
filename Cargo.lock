@@ -7,8 +7,18 @@ name = "half-stack"
 version = "0.1.0"
 dependencies = [
  "json",
+ "misc",
+ "trace",
 ]
 
 [[package]]
 name = "json"
+version = "0.1.0"
+
+[[package]]
+name = "misc"
+version = "0.1.0"
+
+[[package]]
+name = "trace"
 version = "0.1.0"

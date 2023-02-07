@@ -98,8 +98,8 @@ impl Display for Value {
 
         match self {
             Self::Null => write!(f, "null"),
-            Self::Bool(b) => write!(f, "{}", b),
-            Self::Number(n) => write!(f, "{}", n),
+            Self::Bool(b) => write!(f, "{b}"),
+            Self::Number(n) => write!(f, "{n}"),
             Self::String(s) => write!(f, r#""{}""#, escape(s)),
             Self::Array(a) => write!(
                 f,

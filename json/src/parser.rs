@@ -88,7 +88,7 @@ impl<'a> Parser<'a> {
         }
 
         let start = self.pos;
-        while self.pos < self.len && is_digit(self.next() as char) {}
+        while self.pos < self.len && is_digit(self.next()) {}
 
         let num = &self.input[start..self.pos];
         Ok(Value::Number(num.parse()?))

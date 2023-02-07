@@ -24,9 +24,9 @@ pub enum Number {
 impl Display for Number {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         match self {
-            Self::UInt(x) => write!(f, "{}", x),
-            Self::Int(x) => write!(f, "{}", x),
-            Self::Float(x) => write!(f, "{}", x),
+            Self::UInt(x) => write!(f, "{x}"),
+            Self::Int(x) => write!(f, "{x}"),
+            Self::Float(x) => write!(f, "{x}"),
         }
     }
 }
