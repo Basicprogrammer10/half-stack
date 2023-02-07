@@ -3,3 +3,6 @@ authors = ["Connor Slade <connor@connorcode.com>"]
 edition = "2021"
 name = "misc"
 version = "0.1.0"
+
+[dependencies]
+afire = "1.2.0"

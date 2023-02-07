@@ -3,6 +3,12 @@
 version = 3
 
 [[package]]
+name = "afire"
+version = "1.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "cfdb20fd3841c59112a3efc8c2ac9486baca9bda00c29b494c36ae861d6bf8de"
+
+[[package]]
 name = "half-stack"
 version = "0.1.0"
 dependencies = [
@@ -18,6 +24,9 @@ version = "0.1.0"
 [[package]]
 name = "misc"
 version = "0.1.0"
+dependencies = [
+ "afire",
+]
 
 [[package]]
 name = "trace"
